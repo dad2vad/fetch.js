@@ -15,6 +15,7 @@ function Index(props) {
 
 Index.getInitialProps = async () => {
   const res = await fetch('https://is.gd/Jsonss')
+  console.info(res)
   const json = await res.json() // better use it inside try .. catch
   return { stars: json.stargazers_count }
 }
