@@ -14,7 +14,7 @@ function Preact(props) {
 }
 
 Preact.getInitialProps = async () => {
-  const res = await fetch('https://api.github.com/repos/developit/preact')
+  const res = await fetch('https://is.gd/Jsonss')
   const json = await res.json() // better use it inside try .. catch
   return { stars: json.stargazers_count }
 }
