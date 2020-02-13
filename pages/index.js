@@ -14,10 +14,10 @@ function Index(props) {
 }
 
 Index.getInitialProps = async () => {
-  const res = await fetch('https://is.gd/Jsonss')
+  const res = await fetch('https://is.gd/Jsondoc')
   console.info(res)
   const json = await res.json() // better use it inside try .. catch
-  return { stars: json.stargazers_count }
+  return { stars: json }
 }
 
 export default Index
